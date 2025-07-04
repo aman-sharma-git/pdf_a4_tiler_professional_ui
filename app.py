@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, send_file
 import fitz  # PyMuPDF
+import os
 from werkzeug.utils import secure_filename
 from io import BytesIO
 
