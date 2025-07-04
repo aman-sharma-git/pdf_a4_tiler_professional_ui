@@ -50,4 +50,5 @@ def process_pdf():
                      download_name="tiled_a4.pdf", mimetype="application/pdf")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))  # Default fallback port
+    app.run(host='0.0.0.0', port=port)
